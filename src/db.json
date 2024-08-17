@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "anil",
       "email": "anil@gmail.com",
       "password": "123456"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "umut",
       "email": "umut@gmail.com",
       "password": "123456"
@@ -42,5 +42,48 @@
       "email": "ceza_44@gmail.com",
       "password": "123456"
     }
+  ],
+  "movies" : [
+    {
+      "id": 1,
+      "addedBy":"1",
+      "title": "The Shawshank Redemption",
+      "rating": 9.3,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e6/Esaretin-bedeli.jpg/640px-Esaretin-bedeli.jpg",
+      "category": ["Drama","Crime"],
+      "description": "Two imprisoned ",
+      "scenario": "Stephen King",
+      "director": "Frank Darabont",
+      "year": 1994,
+      "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+    },
+    {
+      "id": 2,
+      "addedBy":"1",
+      "title": "The Godfather",
+      "rating": 9.2,
+      "image": "https://play-lh.googleusercontent.com/ZucjGxDqQ-cHIN-8YA1HgZx7dFhXkfnz73SrdRPmOOHEax08sngqZMR_jMKq0sZuv5P7-T2Z2aHJ1uGQiys",
+      "category": ["Drama","Crime"],
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "scenario": "Mario Puzo",
+      "director": "Francis Ford Coppola",
+      "year": 1972,
+      "actors": ["Marlon Brando", "Al Pacino", "James Caan"]
+    },
+    {
+      "id": 3,
+      "addedBy":"1",
+      "title": "The Dark Knight",
+      "rating": 9.0,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
+      "category": ["Action","Crime","Drama","Comedy"],
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "scenario": "Jonathan Nolan",
+      "director": "Christopher Nolan",
+      "year": 2008,
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+    }
+    
+   
   ]
 }
