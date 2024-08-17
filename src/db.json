@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "anil",
+      "email": "anil@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "umut",
+      "email": "umut@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "ad16",
+      "username": "anilitto",
+      "email": "anilitto@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "d948",
+      "username": "gulistan",
+      "email": "gulistanaksoy87@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "b7e8",
+      "username": "berk",
+      "email": "berk@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "ceca",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "aad0",
+      "username": "ceza",
+      "email": "ceza_44@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
