@@ -19,17 +19,7 @@ export const addNewMovie = createAsyncThunk("movie/addNewMovie", async (newMovie
 
 const initialState = {
   movies: [],
-  movie: {
-    id: "",
-    title: "",
-    image: "",
-    director: "",
-    scenario: "",
-    description: "",
-    date: "",
-    category: [],
-    actors: [],
-  },
+ 
   isLoading: false,
   isError: false,
   isSuccess: false,
@@ -42,7 +32,6 @@ export const movieSlice = createSlice({
   reducers: {
     reset: (state) => {
       state.movies = [];
-      state.movie = {};
       state.isError = false;
       state.isSuccess = false;
       state.isLoading = false;
@@ -60,6 +49,17 @@ export const movieSlice = createSlice({
         state.movies = action.payload;
       })
       .addCase(getAllMovies.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = true;
+        state.message = action.payload.message;
+      })
+      .addCase(addNewMovie.pending, (state) => {
+        state.isLoading = true;
+      }).addCase(addNewMovie.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isSuccess = true;
+        state.movies.push(action.payload);
+      }).addCase(addNewMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload.message;

@@ -299,6 +299,48 @@
         " Özcan Deniz",
         " Haluk Bilginer"
       ]
+    },
+    {
+      "id": "70bc",
+      "addedBy": "1",
+      "title": "Leyla ile Mecnun",
+      "image": "https://image.exxen.com/content/9/es/39508/Poster.jpg?v=638163246197581395",
+      "director": "Onur Ünlü",
+      "scenario": "Onur Ünlü",
+      "description": "Mecnun karakterinin aşık olduğu leylasına kavusmak uğruna çektiği acılar ve dertler",
+      "date": "2011-01-06",
+      "rating": "7",
+      "category": [
+        "Adventure",
+        "Fantasy",
+        "Comedy"
+      ],
+      "actors": [
+        "Ali Atay",
+        " Ezgi BilmemKim"
+      ]
+    },
+    {
+      "id": "0843",
+      "addedBy": "1",
+      "title": "Av Mevsimi",
+      "image": "https://i.ytimg.com/vi/jdKyYweQFSo/sddefault.jpg",
+      "director": "Doğan Süsleyen",
+      "scenario": "Cumalı Kızık",
+      "description": "İki polis ve bir çaylağın hikayesi",
+      "date": "2010-06-22",
+      "rating": "8",
+      "category": [
+        "Action",
+        "Political",
+        "Crime"
+      ],
+      "actors": [
+        "Şener Şen",
+        " Cem Yılmaz",
+        " Okan Yalabık"
+      ]
     }
+    
   ]
 }

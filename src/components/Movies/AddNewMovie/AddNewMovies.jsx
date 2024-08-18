@@ -5,11 +5,13 @@ import {
   addNewMovie,
   getAllMovies,
 } from "../../../redux/slices/movieSlice/movieSlice";
+import Spinner from "../../General/Spinner/Spinner";
 
 const AddNewMovies = () => {
   const userData = JSON.parse(localStorage.getItem("user"));
   const dispatch = useDispatch();
-  
+
+  const { isLoading, isError, isSuccess } = useSelector((state) => state.movie);
 
   const [movieFormData, setMovieFormData] = useState({
     addedBy: userData.id,
@@ -80,11 +82,27 @@ const AddNewMovies = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addNewMovie(movieFormData));
+    setMovieFormData({
+      addedBy: userData.id,
+      title: "",
+      image: "",
+      director: "",
+      scenario: "",
+      description: "",
+      date: "",
+      rating: 0,
+      category: [],
+      actors: [],
+    });
   };
+ 
 
   useEffect(() => {
     dispatch(getAllMovies());
-  }, []);
+  }, [dispatch]);
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="d-flex align-items-center justify-content-center my-5">

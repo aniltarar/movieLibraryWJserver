@@ -19,16 +19,16 @@ const MovieItem = ({ movie }) => {
   } = movie;
 
   return (
-    <Card style={{ maxWidth: "60%", minWidth: "60%", margin: "10px" }}>
-      <Row className="g-0 p-3">
+    <Card style={{ maxWidth: "60%", minWidth: "60%", minHeight:"500px", margin: "10px" }} className="d-flex justify-content-center">
+      <Row className="g-2 p-3 ">
         <Col
           sm={12}
           md={10}
           lg={8}
           xl={4}
-          className="d-flex align-items-center "
+          className="d-flex justify-content-center align-items-center"
         >
-          <Card.Img className="movie-image " variant="top" src={image} />
+          <Card.Img className="movie-image border border-warning "  alt={`${title} filminin afiş görseline şuanda ulaşılamamaktadır.`} variant="top" src={image} />
         </Col>
         <Col xl={8}>
           <Card.Title className="fs-2 text-center d-flex justify-content-around align-items-center">
@@ -48,7 +48,7 @@ const MovieItem = ({ movie }) => {
                 </Badge>
               ))}
             </Card.Title>
-            <Card.Text className="text-clamp-15">{description}</Card.Text>
+            <Card.Text className="text-clamp-15 text-wrap ">{description}</Card.Text>
 
             <ul className="list-group">
               <li className="list-group-item">Senarist : {scenario}</li>
