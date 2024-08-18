@@ -14,13 +14,12 @@ const MovieItem = ({ movie }) => {
     description,
     scenario,
     director,
-    year,
+    date,
     actors,
   } = movie;
-  console.log(image);
 
   return (
-    <Card style={{ maxWidth: "50%", minWidth: "50%", margin: "10px" }}>
+    <Card style={{ maxWidth: "60%", minWidth: "60%", margin: "10px" }}>
       <Row className="g-0 p-3">
         <Col
           sm={12}
@@ -54,7 +53,7 @@ const MovieItem = ({ movie }) => {
             <ul className="list-group">
               <li className="list-group-item">Senarist : {scenario}</li>
               <li className="list-group-item">Yönetmen : {director}</li>
-              <li className="list-group-item">Yayın Tarihi : {year}</li>
+              <li className="list-group-item">Yayın Tarihi : {date}</li>
               <li className="list-group-item">
                 {" "}
                 Oyuncular : [ {actors.map((actor) => actor + ", ")} ]

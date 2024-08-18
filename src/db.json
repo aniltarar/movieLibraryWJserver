@@ -41,49 +41,223 @@
       "username": "ceza",
       "email": "ceza_44@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "b3f8",
+      "username": "kader",
+      "email": "kaderaksy@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2f7a",
+      "username": "spsofme",
+      "email": "spsofme@gmail.com",
+      "password": "123456"
     }
   ],
-  "movies" : [
+  "movies": [
     {
       "id": 1,
-      "addedBy":"1",
+      "addedBy": "1",
       "title": "The Shawshank Redemption",
       "rating": 9.3,
       "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e6/Esaretin-bedeli.jpg/640px-Esaretin-bedeli.jpg",
-      "category": ["Drama","Crime"],
-      "description": "Two imprisoned ",
+      "category": [
+        "Drama",
+        "Crime"
+      ],
+      "description": "Stephen King'in Rita Hayworth ve Shawshank'in Kefareti adlı novellasından uyarlanan film...",
       "scenario": "Stephen King",
       "director": "Frank Darabont",
-      "year": 1994,
-      "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+      "date": "1994/03/03",
+      "actors": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ]
     },
     {
       "id": 2,
-      "addedBy":"1",
+      "addedBy": "1",
       "title": "The Godfather",
       "rating": 9.2,
       "image": "https://play-lh.googleusercontent.com/ZucjGxDqQ-cHIN-8YA1HgZx7dFhXkfnz73SrdRPmOOHEax08sngqZMR_jMKq0sZuv5P7-T2Z2aHJ1uGQiys",
-      "category": ["Drama","Crime"],
-      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "category": [
+        "Drama",
+        "Crime"
+      ],
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his empire...",
       "scenario": "Mario Puzo",
       "director": "Francis Ford Coppola",
-      "year": 1972,
-      "actors": ["Marlon Brando", "Al Pacino", "James Caan"]
+      "date": "1972/05/11",
+      "actors": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan"
+      ]
     },
     {
       "id": 3,
-      "addedBy":"1",
+      "addedBy": "1",
       "title": "The Dark Knight",
-      "rating": 9.0,
+      "rating": 9,
       "image": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
-      "category": ["Action","Crime","Drama","Comedy"],
-      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "category": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "description": "When the menace known as the Joker wreaks havoc on Gotham, Batman faces his toughest test...",
       "scenario": "Jonathan Nolan",
       "director": "Christopher Nolan",
-      "year": 2008,
-      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+      "date": "2008/07/18",
+      "actors": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart"
+      ]
+    },
+    {
+      "id": 4,
+      "addedBy": "1",
+      "title": "Inception",
+      "rating": 8.8,
+      "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+      "category": [
+        "Sci-Fi",
+        "Thriller",
+        "Action"
+      ],
+      "description": "A thief who steals corporate secrets through dream-sharing technology is given a chance at redemption...",
+      "scenario": "Christopher Nolan",
+      "director": "Christopher Nolan",
+      "date": "2010/07/16",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Elliot Page"
+      ]
+    },
+    {
+      "id": 5,
+      "addedBy": "1",
+      "title": "Forrest Gump",
+      "rating": 8.8,
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+      "category": [
+        "Drama",
+        "Romance"
+      ],
+      "description": "The story of a man with a low IQ who achieves extraordinary things in his life...",
+      "scenario": "Eric Roth",
+      "director": "Robert Zemeckis",
+      "date": "1994/07/06",
+      "actors": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise"
+      ]
+    },
+    {
+      "id": 6,
+      "addedBy": "1",
+      "title": "Pulp Fiction",
+      "rating": 8.9,
+      "image": "https://m.media-amazon.com/images/I/71xBLRBYOiL._AC_SY679_.jpg",
+      "category": [
+        "Crime",
+        "Drama"
+      ],
+      "description": "The lives of two mob hitmen, a boxer, and a gangster intertwine in a tale of violence and redemption...",
+      "scenario": "Quentin Tarantino",
+      "director": "Quentin Tarantino",
+      "date": "1994/10/14",
+      "actors": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman"
+      ]
+    },
+    {
+      "id": 7,
+      "addedBy": "1",
+      "title": "The Matrix",
+      "rating": 8.7,
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+      "category": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "description": "A hacker learns the world is a simulation and joins a rebellion against its controllers...",
+      "scenario": "Lana Wachowski",
+      "director": "The Wachowskis",
+      "date": "1999/03/31",
+      "actors": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss"
+      ]
+    },
+    {
+      "id": 8,
+      "addedBy": "1",
+      "title": "Schindler's List",
+      "rating": 8.9,
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+      "category": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "description": "In German-occupied Poland, industrialist Oskar Schindler saves over a thousand Jewish refugees...",
+      "scenario": "Steven Zaillian",
+      "director": "Steven Spielberg",
+      "date": "1993/11/30",
+      "actors": [
+        "Liam Neeson",
+        "Ben Kingsley",
+        "Ralph Fiennes"
+      ]
+    },
+    {
+      "id": 9,
+      "addedBy": "1",
+      "title": "Fight Club",
+      "rating": 8.8,
+      "image": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg",
+      "category": [
+        "Drama"
+      ],
+      "description": "An insomniac office worker forms an underground fight club as a form of male bonding...",
+      "scenario": "Jim Uhls",
+      "director": "David Fincher",
+      "date": "1999/10/15",
+      "actors": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter"
+      ]
+    },
+    {
+      "id": 10,
+      "addedBy": "1",
+      "title": "Interstellar",
+      "rating": 8.6,
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "category": [
+        "Adventure",
+        "Sci-Fi",
+        "Drama"
+      ],
+      "description": "A team of explorers travel through a wormhole in space in an attempt to save humanity...",
+      "scenario": "Jonathan Nolan",
+      "director": "Christopher Nolan",
+      "date": "2014/11/07",
+      "actors": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ]
     }
-    
-   
   ]
 }
