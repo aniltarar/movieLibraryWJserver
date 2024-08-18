@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MovieItem from "../../components/Movies/MovieItem";
+import MovieItem from "../../components/Movies/MovieItem/MovieItem";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllMovies } from "../../redux/slices/movieSlice/movieSlice";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,6 @@ const Movies = () => {
   };
 
   const sortMovies = (finalMovies) => {
-    
     if (selectedCategory === "alfabetik") {
       return finalMovies.sort((a, b) => a.title.localeCompare(b.title));
     } else {
@@ -49,15 +48,20 @@ const Movies = () => {
   });
 
   const finalMovies = sortMovies(filteredMovies);
-  
 
   useEffect(() => {
-    dispatch(getAllMovies());
     if (!user) {
       navigate("/login");
     }
-    getCategories();
-  }, [isSuccess,movies]); 
+
+    dispatch(getAllMovies());
+  }, [dispatch, user, navigate]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      getCategories();
+    }
+  }, [isSuccess]);
 
   return (
     <div className="moviesGrid d-flex flex-column p-5 border m-5">

@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getAllMoviesService } from "./movieService";
+import { addNewMovieService, getAllMoviesService } from "./movieService";
 
 export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   try {
@@ -9,9 +9,27 @@ export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   }
 });
 
+export const addNewMovie = createAsyncThunk("movie/addNewMovie", async (newMovie)=>{
+  try {
+    return await addNewMovieService(newMovie);
+  } catch (error) {
+    return throwError(error.response.data);
+  }
+})
+
 const initialState = {
   movies: [],
-  movie: {},
+  movie: {
+    id: "",
+    title: "",
+    image: "",
+    director: "",
+    scenario: "",
+    description: "",
+    date: "",
+    category: [],
+    actors: [],
+  },
   isLoading: false,
   isError: false,
   isSuccess: false,

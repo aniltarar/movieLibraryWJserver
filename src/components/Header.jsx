@@ -22,6 +22,7 @@ const Header = () => {
             <Link to='/login' className='text-decoration-none fs-4 text-light'>Login</Link>
             <Link to='/register' className='text-decoration-none fs-4 text-light'>Register</Link>
             <Link to='/movies' className='text-decoration-none fs-4 text-light'>Movies</Link>
+            <Link to='/add-movie' className='text-decoration-none fs-4 text-light'>Add Movie</Link>
             <div className="rigth">
 
              {
