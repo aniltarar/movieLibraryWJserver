@@ -26,6 +26,7 @@ const Movies = () => {
     setCategories(uniqueCategories);
   };
 
+
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
   };
@@ -44,6 +45,10 @@ const Movies = () => {
     setSearch(e.target.value);
   };
 
+  const refreshMovies = () =>{
+    dispatch(getAllMovies());
+  }
+
   const filteredMovies = movies.filter((movie) => {
     return movie.title.toLowerCase().includes(search.toLowerCase());
   });
@@ -58,26 +63,23 @@ const Movies = () => {
     dispatch(getAllMovies());
   }, [dispatch, user, navigate]);
 
-  
-
   useEffect(() => {
     if (isSuccess) {
       getCategories();
     }
-    
-  }, [isSuccess,isLoading,movies]);
-  if(isLoading) {
-    return <Spinner/>
-    }
+  }, [isSuccess, isLoading, movies]);
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="moviesGrid d-flex flex-column p-5 border m-5">
       <h1>All Movies</h1>
-      <div className="moviesListTop d-flex w-100 gap-5">
+      <div className="moviesListTop d-flex w-100 gap-5 mb-5">
         <div className="searchMovie w-50">
           <input
             type="text"
-            className="form-control"
+            className="form-control p-3"
             placeholder="Search Movie"
             onChange={handleSearch}
             value={search}
@@ -85,11 +87,11 @@ const Movies = () => {
         </div>
         <div className="sortMovies w-50">
           <select
-            className="form-select"
+            className="form-select p-3"
             aria-label="Default select example"
             onChange={handleCategoryChange}
           >
-            <option value="alfabetik">Alfabetik</option>
+            .<option value="alfabetik">Alfabetik Diziliş</option>
             {categories.map((category) => (
               <option key={category} value={category}>
                 {category}
@@ -97,6 +99,7 @@ const Movies = () => {
             ))}
           </select>
         </div>
+        <button className="btn btn-outline-dark btn-lg" onClick={refreshMovies}>Yenile</button>
       </div>
       <div className="d-flex flex-column justify-content-center align-items-center">
         {finalMovies.map((movie) => (

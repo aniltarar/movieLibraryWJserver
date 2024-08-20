@@ -5,6 +5,7 @@ import Register from "./pages/register/Register";
 import Header from "./components/General/Header";
 import Movies from "./pages/movies/Movies";
 import AddNewMovies from "./components/Movies/AddNewMovie/AddNewMovies";
+import ListMyMovies from "./components/Movies/ListMyMovies/ListMyMovies";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/add-movie" element={<AddNewMovies />} />
+        <Route path="/my-movies" element={<ListMyMovies />} />
       </Routes>
     </>
   );

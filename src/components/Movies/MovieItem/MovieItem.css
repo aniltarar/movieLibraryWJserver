@@ -12,3 +12,6 @@
   .movie-image:hover {
     transform: scale(1.02); 
   }
+  .badge:hover{
+    transform: scale(1.1);
+  }

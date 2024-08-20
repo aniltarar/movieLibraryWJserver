@@ -228,7 +228,7 @@
       "category": [
         "Drama"
       ],
-      "description": "An insomniac office worker forms an underground fight club as a form of male bonding...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facilis minus eum, qui suscipit eos soluta nostrum similique doloribus, adipisci modi sed et quidem vero non repellendus quos provident sit? Quod voluptatum, consequuntur accusantium officiis iste quasi sunt veritatis nobis harum ipsum. Quas dolorem incidunt quia dignissimos, officia in rerum est corporis laboriosam autem ad deleniti ex, repudiandae unde, similique reiciendis esse ut rem hic saepe labore ipsum nulla alias! Velit consequatur impedit, facere numquam nulla debitis voluptatem, perferendis possimus quisquam laborum deleniti adipisci ipsam provident quasi delectus. Ea, sequi non tempore exercitationem quod quo nulla totam sapiente quos qui!",
       "scenario": "Jim Uhls",
       "director": "David Fincher",
       "date": "1999/10/15",
@@ -340,7 +340,54 @@
         " Cem Yılmaz",
         " Okan Yalabık"
       ]
+    },
+    {
+      "id": "f49b",
+      "addedBy": "d948",
+      "title": "asd123",
+      "image": "",
+      "director": "",
+      "scenario": "",
+      "description": "",
+      "date": "",
+      "rating": 0,
+      "category": [],
+      "actors": []
+    },
+    {
+      "id": "59ee",
+      "addedBy": "d948",
+      "title": "Arog",
+      "image": "https://upload.wikimedia.org/wikipedia/tr/3/37/Arog.jpg",
+      "director": "Cem Yılmaz",
+      "scenario": "Cem Yılmaz Senarist",
+      "description": "özetözetözetözetözetözetözetözetözetözetözetözetözetözetözet özet özet ",
+      "date": "2008-09-05",
+      "rating": "7",
+      "category": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Western"
+      ],
+      "actors": [
+        "Cem Yılmaz",
+        " Zafer Algöz",
+        " Ozan Güven"
+      ]
+    },
+    {
+      "id": "e188",
+      "addedBy": "1",
+      "title": "deneme",
+      "image": "",
+      "director": "",
+      "scenario": "",
+      "description": "",
+      "date": "",
+      "rating": 0,
+      "category": [],
+      "actors": []
     }
-    
   ]
 }
