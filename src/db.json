@@ -13,12 +13,6 @@
       "password": "123456"
     },
     {
-      "id": "ad16",
-      "username": "anilitto",
-      "email": "anilitto@gmail.com",
-      "password": "123"
-    },
-    {
       "id": "d948",
       "username": "gulistan",
       "email": "gulistanaksoy87@gmail.com",
@@ -43,12 +37,6 @@
       "password": "123456"
     },
     {
-      "id": "b3f8",
-      "username": "kader",
-      "email": "kaderaksy@gmail.com",
-      "password": "123456"
-    },
-    {
       "id": "2f7a",
       "username": "spsofme",
       "email": "spsofme@gmail.com",
@@ -57,19 +45,18 @@
   ],
   "movies": [
     {
-      "id": "1",
-      "addedBy": "1",
+      "id": "12",
+      "addedBy": "2",
       "title": "The Shawshank Redemption",
       "rating": 9.3,
-      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e6/Esaretin-bedeli.jpg/640px-Esaretin-bedeli.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
       "category": [
-        "Drama",
-        "Crime"
+        "Drama"
       ],
-      "description": "Stephen King'in Rita Hayworth ve Shawshank'in Kefareti adlı novellasından uyarlanan film...",
-      "scenario": "Stephen King",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "scenario": "Frank Darabont",
       "director": "Frank Darabont",
-      "date": "1994/03/03",
+      "date": "1994/09/23",
       "actors": [
         "Tim Robbins",
         "Morgan Freeman",
@@ -77,19 +64,103 @@
       ]
     },
     {
-      "id": "2",
-      "addedBy": "1",
-      "title": "The Godfather",
-      "rating": 9.2,
-      "image": "https://play-lh.googleusercontent.com/ZucjGxDqQ-cHIN-8YA1HgZx7dFhXkfnz73SrdRPmOOHEax08sngqZMR_jMKq0sZuv5P7-T2Z2aHJ1uGQiys",
+      "id": "13",
+      "addedBy": "d948",
+      "title": "Inglourious Basterds",
+      "rating": 8.3,
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
+      "category": [
+        "Adventure",
+        "Drama",
+        "War"
+      ],
+      "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theater owner's vengeful plans.",
+      "scenario": "Quentin Tarantino",
+      "director": "Quentin Tarantino",
+      "date": "2009/08/21",
+      "actors": [
+        "Brad Pitt",
+        "Diane Kruger",
+        "Eli Roth"
+      ]
+    },
+    {
+      "id": "14",
+      "addedBy": "b7e8",
+      "title": "The Prestige",
+      "rating": 8.5,
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
       "category": [
         "Drama",
-        "Crime"
+        "Mystery",
+        "Sci-Fi"
       ],
-      "description": "The aging patriarch of an organized crime dynasty transfers control of his empire...",
+      "description": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
+      "scenario": "Jonathan Nolan",
+      "director": "Christopher Nolan",
+      "date": "2006/10/20",
+      "actors": [
+        "Christian Bale",
+        "Hugh Jackman",
+        "Scarlett Johansson"
+      ]
+    },
+    {
+      "id": "15",
+      "addedBy": "ceca",
+      "title": "Braveheart",
+      "rating": 8.3,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
+      "category": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+      "scenario": "Randall Wallace",
+      "director": "Mel Gibson",
+      "date": "1995/05/24",
+      "actors": [
+        "Mel Gibson",
+        "Sophie Marceau",
+        "Patrick McGoohan"
+      ]
+    },
+    {
+      "id": "16",
+      "addedBy": "aad0",
+      "title": "Mad Max: Fury Road",
+      "rating": 8.1,
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
+      "category": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
+      "scenario": "George Miller",
+      "director": "George Miller",
+      "date": "2015/05/15",
+      "actors": [
+        "Tom Hardy",
+        "Charlize Theron",
+        "Nicholas Hoult"
+      ]
+    },
+    {
+      "id": "17",
+      "addedBy": "2f7a",
+      "title": "The Godfather",
+      "rating": 9.2,
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+      "category": [
+        "Crime",
+        "Drama"
+      ],
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
       "scenario": "Mario Puzo",
       "director": "Francis Ford Coppola",
-      "date": "1972/05/11",
+      "date": "1972/03/24",
       "actors": [
         "Marlon Brando",
         "Al Pacino",
@@ -97,297 +168,146 @@
       ]
     },
     {
-      "id": "3",
+      "id": "18",
       "addedBy": "1",
-      "title": "The Dark Knight",
-      "rating": 9,
-      "image": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
+      "title": "The Dark Knight Rises",
+      "rating": 8.4,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg",
       "category": [
         "Action",
-        "Crime",
-        "Drama"
+        "Thriller"
       ],
-      "description": "When the menace known as the Joker wreaks havoc on Gotham, Batman faces his toughest test...",
+      "description": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the enigmatic Selina Kyle to save Gotham City from the brutal guerrilla terrorist Bane.",
       "scenario": "Jonathan Nolan",
       "director": "Christopher Nolan",
-      "date": "2008/07/18",
+      "date": "2012/07/20",
       "actors": [
         "Christian Bale",
-        "Heath Ledger",
-        "Aaron Eckhart"
+        "Tom Hardy",
+        "Anne Hathaway"
       ]
     },
     {
-      "id": "4",
-      "addedBy": "1",
-      "title": "Inception",
+      "id": "19",
+      "addedBy": "2",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
       "rating": 8.8,
-      "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
-      "category": [
-        "Sci-Fi",
-        "Thriller",
-        "Action"
-      ],
-      "description": "A thief who steals corporate secrets through dream-sharing technology is given a chance at redemption...",
-      "scenario": "Christopher Nolan",
-      "director": "Christopher Nolan",
-      "date": "2010/07/16",
-      "actors": [
-        "Leonardo DiCaprio",
-        "Joseph Gordon-Levitt",
-        "Elliot Page"
-      ]
-    },
-    {
-      "id": "5",
-      "addedBy": "1",
-      "title": "Forrest Gump",
-      "rating": 8.8,
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
-      "category": [
-        "Drama",
-        "Romance"
-      ],
-      "description": "The story of a man with a low IQ who achieves extraordinary things in his life...",
-      "scenario": "Eric Roth",
-      "director": "Robert Zemeckis",
-      "date": "1994/07/06",
-      "actors": [
-        "Tom Hanks",
-        "Robin Wright",
-        "Gary Sinise"
-      ]
-    },
-    {
-      "id": "6",
-      "addedBy": "1",
-      "title": "Pulp Fiction",
-      "rating": 8.9,
-      "image": "https://m.media-amazon.com/images/I/71xBLRBYOiL._AC_SY679_.jpg",
-      "category": [
-        "Crime",
-        "Drama"
-      ],
-      "description": "The lives of two mob hitmen, a boxer, and a gangster intertwine in a tale of violence and redemption...",
-      "scenario": "Quentin Tarantino",
-      "director": "Quentin Tarantino",
-      "date": "1994/10/14",
-      "actors": [
-        "John Travolta",
-        "Samuel L. Jackson",
-        "Uma Thurman"
-      ]
-    },
-    {
-      "id": "7",
-      "addedBy": "1",
-      "title": "The Matrix",
-      "rating": 8.7,
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Ringstrilogyposter.jpg",
       "category": [
         "Action",
-        "Sci-Fi"
+        "Adventure",
+        "Drama"
       ],
-      "description": "A hacker learns the world is a simulation and joins a rebellion against its controllers...",
-      "scenario": "Lana Wachowski",
-      "director": "The Wachowskis",
-      "date": "1999/03/31",
+      "description": "A meek Hobbit and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "scenario": "Fran Walsh",
+      "director": "Peter Jackson",
+      "date": "2001/12/19",
       "actors": [
-        "Keanu Reeves",
-        "Laurence Fishburne",
-        "Carrie-Anne Moss"
+        "Elijah Wood",
+        "Ian McKellen",
+        "Orlando Bloom"
       ]
     },
     {
-      "id": "8",
-      "addedBy": "1",
-      "title": "Schindler's List",
-      "rating": 8.9,
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+      "id": "20",
+      "addedBy": "d948",
+      "title": "The Silence of the Lambs",
+      "rating": 8.6,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
       "category": [
-        "Biography",
+        "Crime",
         "Drama",
-        "History"
+        "Thriller"
       ],
-      "description": "In German-occupied Poland, industrialist Oskar Schindler saves over a thousand Jewish refugees...",
-      "scenario": "Steven Zaillian",
-      "director": "Steven Spielberg",
-      "date": "1993/11/30",
+      "description": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help in catching another serial killer who skins his victims.",
+      "scenario": "Ted Tally",
+      "director": "Jonathan Demme",
+      "date": "1991/02/14",
       "actors": [
-        "Liam Neeson",
-        "Ben Kingsley",
-        "Ralph Fiennes"
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Lawrence A. Bonney"
       ]
     },
     {
-      "id": "9",
-      "addedBy": "1",
+      "id": "21",
+      "addedBy": "b7e8",
+      "title": "Saving Private Ryan",
+      "rating": 8.6,
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
+      "category": [
+        "Drama",
+        "War"
+      ],
+      "description": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "scenario": "Robert Rodat",
+      "director": "Steven Spielberg",
+      "date": "1998/07/24",
+      "actors": [
+        "Tom Hanks",
+        "Matt Damon",
+        "Tom Sizemore"
+      ]
+    },
+    {
+      "id": "22",
+      "addedBy": "ceca",
+      "title": "The Departed",
+      "rating": "8.5",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg",
+      "category": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "scenario": "William Monahan",
+      "director": "Martin Scorsese",
+      "date": "2006/10/06",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Jack Nicholson"
+      ]
+    },
+    {
+      "id": "23",
+      "addedBy": "aad0",
+      "title": "Whiplash",
+      "rating": 8.5,
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
+      "category": [
+        "Drama",
+        "Music"
+      ],
+      "description": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+      "scenario": "Damien Chazelle",
+      "director": "Damien Chazelle",
+      "date": "2014/10/10",
+      "actors": [
+        "Miles Teller",
+        "J.K. Simmons",
+        "Melissa Benoist"
+      ]
+    },
+    {
+      "id": "24",
+      "addedBy": "2f7a",
       "title": "Fight Club",
       "rating": 8.8,
-      "image": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
       "category": [
         "Drama"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facilis minus eum, qui suscipit eos soluta nostrum similique doloribus, adipisci modi sed et quidem vero non repellendus quos provident sit? Quod voluptatum, consequuntur accusantium officiis iste quasi sunt veritatis nobis harum ipsum. Quas dolorem incidunt quia dignissimos, officia in rerum est corporis laboriosam autem ad deleniti ex, repudiandae unde, similique reiciendis esse ut rem hic saepe labore ipsum nulla alias! Velit consequatur impedit, facere numquam nulla debitis voluptatem, perferendis possimus quisquam laborum deleniti adipisci ipsam provident quasi delectus. Ea, sequi non tempore exercitationem quod quo nulla totam sapiente quos qui!",
+      "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
       "scenario": "Jim Uhls",
       "director": "David Fincher",
       "date": "1999/10/15",
       "actors": [
         "Brad Pitt",
         "Edward Norton",
-        "Helena Bonham Carter"
+        "Meat Loaf"
       ]
-    },
-    {
-      "id": "10",
-      "addedBy": "1",
-      "title": "Interstellar",
-      "rating": 8.6,
-      "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
-      "category": [
-        "Adventure",
-        "Sci-Fi",
-        "Drama"
-      ],
-      "description": "A team of explorers travel through a wormhole in space in an attempt to save humanity...",
-      "scenario": "Jonathan Nolan",
-      "director": "Christopher Nolan",
-      "date": "2014/11/07",
-      "actors": [
-        "Matthew McConaughey",
-        "Anne Hathaway",
-        "Jessica Chastain"
-      ]
-    },
-    {
-      "id": "300e",
-      "title": "Joker",
-      "image": "https://example.com/joker.jpg",
-      "director": "Todd Phillips",
-      "scenario": "Todd Phillips, Scott Silver",
-      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
-      "date": "2019-10-04",
-      "category": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "actors": [
-        "Joaquin Phoenix",
-        "Robert De Niro",
-        "Zazie Beetz"
-      ]
-    },
-    {
-      "id": "e942",
-      "addedBy": "1",
-      "title": "Neredesin Firuze",
-      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/69/8318_2.jpg/640px-8318_2.jpg",
-      "director": "Ezel Akay",
-      "scenario": "Levent Kazak",
-      "description": "Plak şirketi olan Hayri ve ekibinin çılgın maceraları",
-      "date": "2003-04-15",
-      "rating": "8",
-      "category": [
-        "Comedy",
-        "Adventure",
-        "Drama",
-        "Mystery"
-      ],
-      "actors": [
-        "Demet Akbağ",
-        " Özcan Deniz",
-        " Haluk Bilginer"
-      ]
-    },
-    {
-      "id": "70bc",
-      "addedBy": "1",
-      "title": "Leyla ile Mecnun",
-      "image": "https://image.exxen.com/content/9/es/39508/Poster.jpg?v=638163246197581395",
-      "director": "Onur Ünlü",
-      "scenario": "Onur Ünlü",
-      "description": "Mecnun karakterinin aşık olduğu leylasına kavusmak uğruna çektiği acılar ve dertler",
-      "date": "2011-01-06",
-      "rating": "7",
-      "category": [
-        "Adventure",
-        "Fantasy",
-        "Comedy"
-      ],
-      "actors": [
-        "Ali Atay",
-        " Ezgi BilmemKim"
-      ]
-    },
-    {
-      "id": "0843",
-      "addedBy": "1",
-      "title": "Av Mevsimi",
-      "image": "https://i.ytimg.com/vi/jdKyYweQFSo/sddefault.jpg",
-      "director": "Doğan Süsleyen",
-      "scenario": "Cumalı Kızık",
-      "description": "İki polis ve bir çaylağın hikayesi",
-      "date": "2010-06-22",
-      "rating": "8",
-      "category": [
-        "Action",
-        "Political",
-        "Crime"
-      ],
-      "actors": [
-        "Şener Şen",
-        " Cem Yılmaz",
-        " Okan Yalabık"
-      ]
-    },
-    {
-      "id": "f49b",
-      "addedBy": "d948",
-      "title": "asd123",
-      "image": "",
-      "director": "",
-      "scenario": "",
-      "description": "",
-      "date": "",
-      "rating": 0,
-      "category": [],
-      "actors": []
-    },
-    {
-      "id": "59ee",
-      "addedBy": "d948",
-      "title": "Arog",
-      "image": "https://upload.wikimedia.org/wikipedia/tr/3/37/Arog.jpg",
-      "director": "Cem Yılmaz",
-      "scenario": "Cem Yılmaz Senarist",
-      "description": "özetözetözetözetözetözetözetözetözetözetözetözetözetözetözet özet özet ",
-      "date": "2008-09-05",
-      "rating": "7",
-      "category": [
-        "Action",
-        "Adventure",
-        "Fantasy",
-        "Western"
-      ],
-      "actors": [
-        "Cem Yılmaz",
-        " Zafer Algöz",
-        " Ozan Güven"
-      ]
-    },
-    {
-      "id": "e188",
-      "addedBy": "1",
-      "title": "deneme",
-      "image": "",
-      "director": "",
-      "scenario": "",
-      "description": "",
-      "date": "",
-      "rating": 0,
-      "category": [],
-      "actors": []
     }
   ]
 }

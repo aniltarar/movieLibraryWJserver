@@ -8,6 +8,7 @@ const ListMyMovies = () => {
   const { movies, isLoading, isError, isSuccess } = useSelector(
     (state) => state.movie
   );
+  
 
   const user = JSON.parse(localStorage.getItem("user"));
   const dispatch = useDispatch();

@@ -1,5 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { addNewMovieService, getAllMoviesService } from "./movieService";
+import {
+  addNewMovieService,
+  deleteMovieService,
+  getAllMoviesService,
+} from "./movieService";
 
 export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   try {
@@ -9,17 +13,27 @@ export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   }
 });
 
-export const addNewMovie = createAsyncThunk("movie/addNewMovie", async (newMovie)=>{
+export const addNewMovie = createAsyncThunk(
+  "movie/addNewMovie",
+  async (newMovie) => {
+    try {
+      return await addNewMovieService(newMovie);
+    } catch (error) {
+      return throwError(error.response.data);
+    }
+  }
+);
+
+export const deleteMovie = createAsyncThunk("movie/deleteMovie", async (id) => {
   try {
-    return await addNewMovieService(newMovie);
+    return await deleteMovieService(id);
   } catch (error) {
     return throwError(error.response.data);
   }
-})
+});
 
 const initialState = {
   movies: [],
- 
   isLoading: false,
   isError: false,
   isSuccess: false,
@@ -55,11 +69,28 @@ export const movieSlice = createSlice({
       })
       .addCase(addNewMovie.pending, (state) => {
         state.isLoading = true;
-      }).addCase(addNewMovie.fulfilled, (state, action) => {
+      })
+      .addCase(addNewMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.movies.push(action.payload);
-      }).addCase(addNewMovie.rejected, (state, action) => {
+      })
+      .addCase(addNewMovie.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = true;
+        state.message = action.payload.message;
+      })
+      .addCase(deleteMovie.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(deleteMovie.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isSuccess = true;
+        state.movies = state.movies.filter(
+          (movie) => movie.id !== action.payload.id
+        );
+      })
+      .addCase(deleteMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload.message;
