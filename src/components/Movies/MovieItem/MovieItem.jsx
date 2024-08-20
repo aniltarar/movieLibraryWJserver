@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Badge, Card, Col, Row } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import "./MovieItem.css";
@@ -17,6 +17,15 @@ const MovieItem = ({ movie }) => {
     actors,
   } = movie;
 
+  const [onHover, setOnHover] = useState(false);
+
+  const onHoverCard = (e)=>{
+   setOnHover(true)
+   
+  }
+  const onLeaveCard = (e)=>{
+    setOnHover(false)
+  }
 
 
   return (
@@ -27,7 +36,9 @@ const MovieItem = ({ movie }) => {
         minHeight: "500px",
         margin: "10px",
       }}
-      className="d-flex justify-content-center card shadow-md "
+      className={`d-flex justify-content-center card shadow-md ${onHover?"border-3 shadow-xl":""} `}
+      onMouseEnter={onHoverCard}
+      onMouseLeave={onLeaveCard}
     >
       <Row className="g-2 p-3 ">
         <Col
@@ -38,7 +49,7 @@ const MovieItem = ({ movie }) => {
           className="d-flex justify-content-center align-items-center"
         >
           <Card.Img
-            className="movie-image border border-warning "
+            className="movie-image border border-warning  "
             alt={`${title} filminin afiş görseline şuanda ulaşılamamaktadır.`}
             variant="top"
             src={image}

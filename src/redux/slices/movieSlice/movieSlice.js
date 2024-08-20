@@ -3,7 +3,10 @@ import {
   addNewMovieService,
   deleteMovieService,
   getAllMoviesService,
+  updateMovieService,
 } from "./movieService";
+
+
 
 export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   try {
@@ -27,6 +30,14 @@ export const addNewMovie = createAsyncThunk(
 export const deleteMovie = createAsyncThunk("movie/deleteMovie", async (id) => {
   try {
     return await deleteMovieService(id);
+  } catch (error) {
+    return throwError(error.response.data);
+  }
+});
+
+export const updateMovie = createAsyncThunk("movie/updateMovie", async (updatedMovie) => {
+  try {
+    return await updateMovieService(updatedMovie.id, updatedMovie);
   } catch (error) {
     return throwError(error.response.data);
   }
@@ -91,6 +102,21 @@ export const movieSlice = createSlice({
         );
       })
       .addCase(deleteMovie.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = true;
+        state.message = action.payload.message;
+      }).addCase(updateMovie.pending, (state) => {
+        state.isLoading = true;
+      }).addCase(updateMovie.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.isSuccess = true;
+        state.movies = state.movies.map((movie) => {
+          if (movie.id === action.payload.id) {
+            return action.payload;
+          }
+          return movie;
+        })
+      }).addCase(updateMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload.message;

@@ -107,24 +107,23 @@
     },
     {
       "id": "15",
-      "addedBy": "ceca",
-      "title": "Braveheart",
-      "rating": 8.3,
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
+      "title": "Braveheart2",
       "category": [
         "Biography",
         "Drama",
         "History"
       ],
-      "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
-      "scenario": "Randall Wallace",
-      "director": "Mel Gibson",
       "date": "1995/05/24",
+      "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+      "director": "Mel Gibson",
       "actors": [
         "Mel Gibson",
         "Sophie Marceau",
         "Patrick McGoohan"
-      ]
+      ],
+      "rating": 8.3,
+      "scenario": "Randall Wallace",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg"
     },
     {
       "id": "16",
@@ -171,63 +170,23 @@
       "id": "18",
       "addedBy": "1",
       "title": "The Dark Knight Rises",
-      "rating": 8.4,
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg",
       "category": [
         "Action",
-        "Thriller"
+        "Thriller",
+        "Drama",
+        "Horror"
       ],
-      "description": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the enigmatic Selina Kyle to save Gotham City from the brutal guerrilla terrorist Bane.",
-      "scenario": "Jonathan Nolan",
-      "director": "Christopher Nolan",
       "date": "2012/07/20",
+      "description": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the enigmatic Selina Kyle to save Gotham City from the brutal guerrilla terrorist Bane.",
+      "director": "Christopher Nolan",
       "actors": [
         "Christian Bale",
         "Tom Hardy",
         "Anne Hathaway"
-      ]
-    },
-    {
-      "id": "19",
-      "addedBy": "2",
-      "title": "The Lord of the Rings: The Fellowship of the Ring",
-      "rating": 8.8,
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Ringstrilogyposter.jpg",
-      "category": [
-        "Action",
-        "Adventure",
-        "Drama"
       ],
-      "description": "A meek Hobbit and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      "scenario": "Fran Walsh",
-      "director": "Peter Jackson",
-      "date": "2001/12/19",
-      "actors": [
-        "Elijah Wood",
-        "Ian McKellen",
-        "Orlando Bloom"
-      ]
-    },
-    {
-      "id": "20",
-      "addedBy": "d948",
-      "title": "The Silence of the Lambs",
-      "rating": 8.6,
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
-      "category": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "description": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help in catching another serial killer who skins his victims.",
-      "scenario": "Ted Tally",
-      "director": "Jonathan Demme",
-      "date": "1991/02/14",
-      "actors": [
-        "Jodie Foster",
-        "Anthony Hopkins",
-        "Lawrence A. Bonney"
-      ]
+      "rating": "7",
+      "scenario": "Jonathan Nolan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg"
     },
     {
       "id": "21",
@@ -252,23 +211,23 @@
     {
       "id": "22",
       "addedBy": "ceca",
-      "title": "The Departed",
-      "rating": "8.5",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg",
+      "title": "The Departed2",
       "category": [
         "Crime",
         "Drama",
         "Thriller"
       ],
-      "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-      "scenario": "William Monahan",
-      "director": "Martin Scorsese",
       "date": "2006/10/06",
+      "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "director": "Martin Scorsese",
       "actors": [
         "Leonardo DiCaprio",
         "Matt Damon",
         "Jack Nicholson"
-      ]
+      ],
+      "rating": "8.5",
+      "scenario": "William Monahan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg"
     },
     {
       "id": "23",

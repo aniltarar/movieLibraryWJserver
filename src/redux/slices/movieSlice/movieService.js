@@ -14,3 +14,8 @@ export const deleteMovieService = async (id) => {
     const response = await axios.delete(`http://localhost:3000/movies/${id}`);
     return response.data;
 }
+
+export const updateMovieService = async (id, updatedMovie) => {
+    const response = await axios.put(`http://localhost:3000/movies/${id}`, updatedMovie);
+    return response.data;
+}

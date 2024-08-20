@@ -3,6 +3,7 @@ import { Badge, Card, Col, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { deleteMovie } from "../../../redux/slices/movieSlice/movieSlice";
 import DeletePopUp from "../../General/PopUp/DeletePopUp";
+import EditPopUp from "../../General/PopUp/EditPopUp";
 
 const RowMovieItem = ({ movie }) => {
   const {
@@ -23,19 +24,43 @@ const RowMovieItem = ({ movie }) => {
   const username = user.username;
   const dispatch = useDispatch();
 
+  const [onHover, setOnHover] = useState(false);
+  const [showDelete, setShowDelete] = useState(false);
+  const [showUpdate, setShowUpdate] = useState(false);
+
+  // Delete Handler
+  const handleClose = () => setShowDelete(false);
+  const handleShow = () => setShowDelete(true);
+
+  // Update Handler
+  const handleUpdateClose = () => setShowUpdate(false);
+  const handleUpdateShow = () => setShowUpdate(true);
+
   const deleteMovieHandler = () => {
     dispatch(deleteMovie(id));
     handleClose();
   };
-  
 
-  const [showDelete, setShowDelte] = useState(false);
-  const handleClose = () => setShowDelte(false);
-  const handleShow = () => setShowDelte(true);
+  const updateMovieHandler = () => {
+    handleUpdateClose();
+  };
+
+  // Hover effect
+
+  const onHoverCard = (e) => {
+    setOnHover(true);
+  };
+  const onLeaveCard = (e) => {
+    setOnHover(false);
+  };
 
   return (
     <>
-      <Card>
+      <Card
+        onMouseEnter={onHoverCard}
+        onMouseLeave={onLeaveCard}
+        className={`${onHover ? "border-3 shadow-xl" : ""}`}
+      >
         <Row className="p-3">
           <Col
             sm={12}
@@ -74,7 +99,9 @@ const RowMovieItem = ({ movie }) => {
                 Filmi Ekleyen Kişi : {username}{" "}
               </Card.Text>
               <div className="controllMovie d-flex w-100 justify-content-end gap-3 ">
-                <button className="btn btn-warning">Düzenle</button>
+                <button className="btn btn-warning" onClick={handleUpdateShow}>
+                  Düzenle
+                </button>
                 <button className="btn btn-danger" onClick={handleShow}>
                   Sil
                 </button>
@@ -83,7 +110,19 @@ const RowMovieItem = ({ movie }) => {
           </Col>
         </Row>
       </Card>
-      <DeletePopUp show={showDelete} handleClose={handleClose} onConfirm={deleteMovieHandler} title = {title} />
+      <DeletePopUp
+        show={showDelete}
+        handleClose={handleClose}
+        onConfirm={deleteMovieHandler}
+        title={title}
+      />
+      <EditPopUp
+        show={showUpdate}
+        handleClose={handleUpdateClose}
+        onConfirm={updateMovieHandler}
+        movie={movie}
+
+      />
     </>
   );
 };

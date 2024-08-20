@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { reset } from '../../redux/slices/userSlice/userSlice'
+import { reset } from '../../../redux/slices/userSlice/userSlice'
 import { useDispatch, useSelector } from 'react-redux'
 
 const Header = () => {
