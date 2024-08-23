@@ -176,11 +176,12 @@ const EditPopUp = ({ show, handleClose, movie }) => {
               <Form.Group className="mb-3" controlId="category">
                 <Form.Label>Kategori</Form.Label>
                 <div className="categoriesGrid">
-                  {checkableCategories.map((category) => (
+                  {checkableCategories.map((category,index) => (
                     <Form.Check
                       key={category}
                       type="checkbox"
                       label={category}
+                      id={category}
                       value={category}
                       checked={updatedMovie.category.includes(category)}
                       onChange={handleCategoryChange}

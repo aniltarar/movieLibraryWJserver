@@ -6,8 +6,6 @@ import {
   updateMovieService,
 } from "./movieService";
 
-
-
 export const getAllMovies = createAsyncThunk("movie/getAllMovies", async () => {
   try {
     return await getAllMoviesService();
@@ -35,13 +33,16 @@ export const deleteMovie = createAsyncThunk("movie/deleteMovie", async (id) => {
   }
 });
 
-export const updateMovie = createAsyncThunk("movie/updateMovie", async (updatedMovie) => {
-  try {
-    return await updateMovieService(updatedMovie.id, updatedMovie);
-  } catch (error) {
-    return throwError(error.response.data);
+export const updateMovie = createAsyncThunk(
+  "movie/updateMovie",
+  async (updatedMovie) => {
+    try {
+      return await updateMovieService(updatedMovie.id, updatedMovie);
+    } catch (error) {
+      return throwError(error.response.data);
+    }
   }
-});
+);
 
 const initialState = {
   movies: [],
@@ -105,9 +106,11 @@ export const movieSlice = createSlice({
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload.message;
-      }).addCase(updateMovie.pending, (state) => {
+      })
+      .addCase(updateMovie.pending, (state) => {
         state.isLoading = true;
-      }).addCase(updateMovie.fulfilled, (state, action) => {
+      })
+      .addCase(updateMovie.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.movies = state.movies.map((movie) => {
@@ -115,8 +118,9 @@ export const movieSlice = createSlice({
             return action.payload;
           }
           return movie;
-        })
-      }).addCase(updateMovie.rejected, (state, action) => {
+        });
+      })
+      .addCase(updateMovie.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload.message;

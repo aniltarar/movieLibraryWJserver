@@ -6,19 +6,7 @@ import DeletePopUp from "../../General/PopUp/DeletePopUp";
 import EditPopUp from "../../General/PopUp/EditPopUp";
 
 const RowMovieItem = ({ movie }) => {
-  const {
-    id,
-    addedBy,
-    title,
-    rating,
-    image,
-    category,
-    description,
-    scenario,
-    director,
-    date,
-    actors,
-  } = movie;
+  const { id, title, image, category, actors, scenario } = movie;
 
   const user = JSON.parse(localStorage.getItem("user"));
   const username = user.username;
@@ -31,19 +19,14 @@ const RowMovieItem = ({ movie }) => {
   // Delete Handler
   const handleClose = () => setShowDelete(false);
   const handleShow = () => setShowDelete(true);
-
-  // Update Handler
-  const handleUpdateClose = () => setShowUpdate(false);
-  const handleUpdateShow = () => setShowUpdate(true);
-
   const deleteMovieHandler = () => {
     dispatch(deleteMovie(id));
     handleClose();
   };
 
-  const updateMovieHandler = () => {
-    handleUpdateClose();
-  };
+  // Update Handler
+  const handleUpdateClose = () => setShowUpdate(false);
+  const handleUpdateShow = () => setShowUpdate(true);
 
   // Hover effect
 
@@ -84,7 +67,7 @@ const RowMovieItem = ({ movie }) => {
             <hr />
 
             <Card.Body className="d-flex flex-column  align-items-center ">
-              <Card.Title className="d-flex  align-items-center gap-3">
+              <Card.Title className="d-flex  align-items-center gap-3 ">
                 {category.map((cat) => (
                   <Badge
                     key={cat}
@@ -95,6 +78,7 @@ const RowMovieItem = ({ movie }) => {
                   </Badge>
                 ))}
               </Card.Title>
+
               <Card.Text className="fs-5">
                 Filmi Ekleyen Kişi : {username}{" "}
               </Card.Text>
@@ -119,9 +103,7 @@ const RowMovieItem = ({ movie }) => {
       <EditPopUp
         show={showUpdate}
         handleClose={handleUpdateClose}
-        onConfirm={updateMovieHandler}
         movie={movie}
-
       />
     </>
   );

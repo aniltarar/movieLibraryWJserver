@@ -66,9 +66,9 @@ const MovieItem = ({ movie }) => {
           <hr />
 
           <Card.Body className="d-flex flex-column  align-items-center  ">
-            <Card.Title className="d-flex  align-items-center gap-3">
+            <Card.Title className="d-grid  align-items-center gap-3 w-100">
               {category.map((cat) => (
-                <Badge className="badge fs-5" key={cat} bg="warning">
+                <Badge className="badge fs-5 text-dark w-0" key={cat} bg="warning">
                   {cat}
                 </Badge>
               ))}

@@ -4,11 +4,11 @@ import { Button, Modal } from "react-bootstrap";
 const DeletePopUp = ({ show, handleClose, onConfirm, title }) => {
   return (
     <>
-      <Modal show={show} onHide={handleClose}animation={false} >
+      <Modal show={show} onHide={handleClose}animation={false} centered >
         <Modal.Header closeButton>
           <Modal.Title className="text-danger">DİKKAT!</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="bg-secondary">
+        <Modal.Body >
           Şuanda <span>{title}</span> isimli filmi silmek istiyorsunuz.
           Onaylıyorsanız{" "}
           <span className="text-danger fw-bold">Eminim, Sil</span> butonuna

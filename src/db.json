@@ -169,7 +169,7 @@
     {
       "id": "18",
       "addedBy": "1",
-      "title": "The Dark Knight Rises",
+      "title": "The Dark Knight Rises Two",
       "category": [
         "Action",
         "Thriller",
@@ -182,7 +182,8 @@
       "actors": [
         "Christian Bale",
         "Tom Hardy",
-        "Anne Hathaway"
+        "Anne Hathaway",
+        "Coni GillingHall"
       ],
       "rating": "7",
       "scenario": "Jonathan Nolan",
@@ -267,6 +268,28 @@
         "Edward Norton",
         "Meat Loaf"
       ]
+    },
+    {
+      "id": "15b4",
+      "addedBy": "1",
+      "title": "denemee",
+      "category": [
+        "Horror",
+        "Action",
+        "Comedy",
+        "Romance"
+      ],
+      "date": "2024-08-22",
+      "description": "adgadgsdgsdg",
+      "director": "Ezel Akay",
+      "actors": [
+        "Şener Şen",
+        " Cem Yılmaz",
+        " Okan Yalabık"
+      ],
+      "rating": "4",
+      "scenario": "Nuri Bilge Ceylan",
+      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/69/8318_2.jpg/640px-8318_2.jpg"
     }
   ]
 }
