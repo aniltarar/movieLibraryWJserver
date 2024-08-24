@@ -16,6 +16,12 @@
       "id": "3",
       "username": "aleyna",
       "email": "aleyna@gmail.com"
+    },
+    {
+      "id": "0dfd",
+      "username": "alis",
+      "email": "alis@gmail.com",
+      "password": "123456"
     }
   ],
   "movies": [
@@ -347,6 +353,28 @@
         "Sophie Marceau",
         "Patrick McGoohan"
       ]
+    },
+    {
+      "id": "0c5c",
+      "addedBy": "0dfd",
+      "title": "aleyna",
+      "category": [
+        "Aksiyon",
+        "Gizem",
+        "Efsane",
+        "Komedi",
+        "Macera",
+        "Fantastik"
+      ],
+      "date": "2024-08-07",
+      "description": "aleyna",
+      "director": "aleyna",
+      "actors": [
+        "aleyna"
+      ],
+      "rating": "8",
+      "scenario": "aleyna",
+      "image": "https://iyikigormusum.com/uploads/85e83eb848c557b7ed8df13469220e50.jpeg"
     }
   ]
 }

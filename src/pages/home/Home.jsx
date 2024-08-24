@@ -17,7 +17,7 @@ const Home = () => {
   });
 
   return (
-    <div className="d-flex flex-column align-items-center ">
+    <div className=  "d-flex flex-column my-5 align-items-center ">
       <h1>My Movie Library'e Hoş Geldiniz.</h1>
       <div className="welcomeMessage">
         <p>

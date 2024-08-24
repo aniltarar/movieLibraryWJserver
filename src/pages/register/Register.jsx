@@ -44,6 +44,7 @@ useEffect(()=>{
           name="username"
           onChange={handleChange}
           value={formData.username}
+          required
         />
         <input
           className="form-control"
@@ -52,6 +53,7 @@ useEffect(()=>{
           name="email"
           onChange={handleChange}
           value={formData.email}
+          required
         />
         <input
           className="form-control"
@@ -60,6 +62,7 @@ useEffect(()=>{
           name="password"
           onChange={handleChange}
           value={formData.password}
+          required
         />
         <button className="btn btn-primary" type="submit">
           Register

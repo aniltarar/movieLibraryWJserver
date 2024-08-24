@@ -49,6 +49,7 @@ const Login = () => {
           placeholder="username"
           name="username"
           onChange={handleChange}
+          required
         />
         <input
           className="form-control"
@@ -56,6 +57,7 @@ const Login = () => {
           placeholder="password"
           name="password"
           onChange={handleChange}
+          required
         />
         <button className="btn btn-primary" type="submit">
           Login

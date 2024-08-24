@@ -126,6 +126,7 @@ const AddNewMovies = () => {
               type="text"
               name="title"
               placeholder="Film Adını Giriniz."
+              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="image">
@@ -135,6 +136,7 @@ const AddNewMovies = () => {
               type="text"
               name="image"
               placeholder="Film Afiş Linkini Koyunuz."
+              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="director">
@@ -144,6 +146,7 @@ const AddNewMovies = () => {
               type="text"
               name="director"
               placeholder="Yönetmen Adını Giriniz."
+              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="scenario">
@@ -153,6 +156,7 @@ const AddNewMovies = () => {
               type="text"
               name="scenario"
               placeholder="Senarist Adını Giriniz."
+              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="description">
@@ -168,6 +172,7 @@ const AddNewMovies = () => {
                 placeholder="Film özetinizi giriniz."
                 onChange={handleChange}
                 name="description"
+                required
               />
             </FloatingLabel>
           </Form.Group>
@@ -187,6 +192,7 @@ const AddNewMovies = () => {
                     id={categoryItem}
                     value={categoryItem}
                     onChange={handleCategoryChange}
+                    
                   />
                 </Col>
               ))}
@@ -200,6 +206,7 @@ const AddNewMovies = () => {
               value={movieFormData.rating}
               onChange={handleChange}
               name="rating"
+              required
             />
             <span className="fs-5">Girilen Puan : {movieFormData.rating}</span>
           </Form.Group>
@@ -210,6 +217,7 @@ const AddNewMovies = () => {
               type="text"
               name="actors"
               placeholder="Film Oyuncularını Griniz. (Virgül ile ayırınız. Örn: Oyuncu1, Oyuncu2)"
+              required
             />
           </Form.Group>
           <button className="btn btn-outline-primary btn-lg w-100">
