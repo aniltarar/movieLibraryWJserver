@@ -31,12 +31,12 @@ const MovieItem = ({ movie }) => {
   return (
     <Card
       style={{
-        maxWidth: "60%",
+        maxWidth: "100%",
         minWidth: "60%",
         minHeight: "500px",
         margin: "10px",
       }}
-      className={`d-flex justify-content-center card shadow-md ${onHover?"border-3 shadow-xl":""} `}
+      className={`d-flex w-100 justify-content-center card shadow-md ${onHover?"border-3 shadow-xl":""} `}
       onMouseEnter={onHoverCard}
       onMouseLeave={onLeaveCard}
     >
@@ -49,7 +49,7 @@ const MovieItem = ({ movie }) => {
           className="d-flex justify-content-center align-items-center"
         >
           <Card.Img
-            className="movie-image border border-warning  "
+            className="movie-image border border-warning w-75"
             alt={`${title} filminin afiş görseline şuanda ulaşılamamaktadır.`}
             variant="top"
             src={image}
@@ -94,3 +94,4 @@ const MovieItem = ({ movie }) => {
 };
 
 export default MovieItem;
+

@@ -14,4 +14,7 @@
   }
   .badge:hover{
     transform: scale(1.02);
+    border: solid black 1px;
+    transition: .3s ease;
   }
+  

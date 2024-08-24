@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Col, FloatingLabel, Form, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  addNewMovie,
-  getAllMovies,
-} from "../../../redux/slices/movieSlice/movieSlice";
+import { addNewMovie, getAllMovies } from "../../../redux/slices/movieSlice/movieSlice";
 import Spinner from "../../General/Spinner/Spinner";
+import { useNavigate } from "react-router-dom";
 
 const AddNewMovies = () => {
   const userData = JSON.parse(localStorage.getItem("user"));
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { isLoading, isError, isSuccess } = useSelector((state) => state.movie);
 
   const [movieFormData, setMovieFormData] = useState({
-    addedBy: userData.id,
+    addedBy: userData ? userData.id : "", // Check if userData is not null
     title: "",
     image: "",
     director: "",
@@ -27,24 +26,24 @@ const AddNewMovies = () => {
   });
 
   const checkableCategories = [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Crime",
+    "Aksiyon",
+    "Macera",
+    "Komedi",
+    "Suç",
     "Drama",
-    "Fantasy",
-    "Historical",
-    "Horror",
-    "Mystery",
-    "Philosophical",
-    "Political",
-    "Romance",
-    "Saga",
-    "Satire",
-    "Science Fiction",
-    "Thriller",
-    "Urban",
-    "Western",
+    "Fantastik",
+    "Tarihi",
+    "Korku",
+    "Gizem",
+    "Felsefi",
+    "Politik",
+    "Romantik",
+    "Efsane",
+    "Sati",
+    "Bilim Kurgu",
+    "Gerilim",
+    "Kentsel",
+    "Vahşi Batı",
   ];
 
   const handleChange = (e) => {
@@ -81,25 +80,35 @@ const AddNewMovies = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addNewMovie(movieFormData));
-    setMovieFormData({
-      addedBy: userData.id,
-      title: "",
-      image: "",
-      director: "",
-      scenario: "",
-      description: "",
-      date: "",
-      rating: 0,
-      category: [],
-      actors: [],
-    });
+    if (userData) {
+      dispatch(addNewMovie(movieFormData));
+      setMovieFormData({
+        addedBy: userData.id,
+        title: "",
+        image: "",
+        director: "",
+        scenario: "",
+        description: "",
+        date: "",
+        rating: 0,
+        category: [],
+        actors: [],
+      });
+    } else {
+      navigate("/login"); // Redirect to login if userData is not available
+    }
   };
- 
+
+  useEffect(() => {
+    if (!userData) {
+      navigate("/login");
+    }
+  }, [userData, navigate]); // Add userData and navigate to dependency array
 
   useEffect(() => {
     dispatch(getAllMovies());
   }, [dispatch]);
+
   if (isLoading) {
     return <Spinner />;
   }
@@ -116,7 +125,7 @@ const AddNewMovies = () => {
               onChange={handleChange}
               type="text"
               name="title"
-              placeholder="Film Adı"
+              placeholder="Film Adını Giriniz."
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="image">
@@ -134,7 +143,7 @@ const AddNewMovies = () => {
               onChange={handleChange}
               type="text"
               name="director"
-              placeholder="Yönetmen adını giriniz."
+              placeholder="Yönetmen Adını Giriniz."
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="scenario">
@@ -143,7 +152,7 @@ const AddNewMovies = () => {
               onChange={handleChange}
               type="text"
               name="scenario"
-              placeholder="Senarist adını giriniz."
+              placeholder="Senarist Adını Giriniz."
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="description">
@@ -151,7 +160,7 @@ const AddNewMovies = () => {
             <FloatingLabel
               controlId="description"
               label="Film Özetinizi Giriniz."
-              className="mb-3 "
+              className="mb-3"
             >
               <Form.Control
                 style={{ minHeight: "100px", maxHeight: "500px" }}
@@ -169,7 +178,6 @@ const AddNewMovies = () => {
           </Form.Group>
           <Form.Group className="mb-3" controlId="category">
             <Form.Label>Kategoriler</Form.Label>
-
             <Row>
               {checkableCategories.map((categoryItem, index) => (
                 <Col key={index} xs={6} sm={4} md={3}>
@@ -185,7 +193,7 @@ const AddNewMovies = () => {
             </Row>
           </Form.Group>
           <Form.Group className="mb-3" controlId="rating">
-            <Form.Label>IMDB Puanı</Form.Label>
+            <Form.Label>Puanım</Form.Label>
             <Form.Range
               max={10}
               min={0}

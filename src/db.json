@@ -13,39 +13,221 @@
       "password": "123456"
     },
     {
-      "id": "d948",
-      "username": "gulistan",
-      "email": "gulistanaksoy87@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "b7e8",
-      "username": "berk",
-      "email": "berk@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "ceca",
-      "username": "admin",
-      "email": "admin@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "aad0",
-      "username": "ceza",
-      "email": "ceza_44@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "2f7a",
-      "username": "spsofme",
-      "email": "spsofme@gmail.com",
-      "password": "123456"
+      "id": "3",
+      "username": "aleyna",
+      "email": "aleyna@gmail.com"
     }
   ],
   "movies": [
     {
-      "id": "12",
+      "id": "25",
+      "addedBy": "1",
+      "title": "The Matrix",
+      "category": [
+        "Aksiyon",
+        "Bilim Kurgu"
+      ],
+      "date": "1999/03/31",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "actors": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss"
+      ],
+      "rating": 8.7,
+      "scenario": "Lana Wachowski, Lilly Wachowski",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+      "id": "26",
+      "addedBy": "2",
+      "title": "Inception",
+      "rating": 8.8,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/2b8bc4866e28f9b95c65965a2b33c8b14a8cebe8287b7399b536c672729ef018.jpg",
+      "category": [
+        "Aksiyon",
+        "Bilim Kurgu",
+        "Gerilim"
+      ],
+      "description": "A thief who enters the dreams of others to steal secrets from their subconscious is given a chance to have his criminal history erased if he can successfully perform an inception.",
+      "scenario": "Christopher Nolan",
+      "director": "Christopher Nolan",
+      "date": "2010/07/16",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Elliot Page"
+      ]
+    },
+    {
+      "id": "27",
+      "addedBy": "3",
+      "title": "The Lion King",
+      "rating": 8.5,
+      "image": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_.jpg",
+      "category": [
+        "Animasyon",
+        "Macera",
+        "Drama"
+      ],
+      "description": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
+      "scenario": "Jeffrey Katzenberg, Roger Allers",
+      "director": "Roger Allers, Rob Minkoff",
+      "date": "1994/06/24",
+      "actors": [
+        "Matthew Broderick",
+        "Jeremy Irons",
+        "James Earl Jones"
+      ]
+    },
+    {
+      "id": "28",
+      "addedBy": "1",
+      "title": "Pulp Fiction",
+      "rating": 8.9,
+      "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "category": [
+        "Suç",
+        "Drama",
+        "Gerilim"
+      ],
+      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "scenario": "Quentin Tarantino",
+      "director": "Quentin Tarantino",
+      "date": "1994/10/14",
+      "actors": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson"
+      ]
+    },
+    {
+      "id": "29",
+      "addedBy": "2",
+      "title": "Forrest Gump",
+      "rating": 8.8,
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+      "category": [
+        "Drama",
+        "Romantik"
+      ],
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+      "scenario": "Winston Groom",
+      "director": "Robert Zemeckis",
+      "date": "1994/07/06",
+      "actors": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise"
+      ]
+    },
+    {
+      "id": "30",
+      "addedBy": "3",
+      "title": "Interstellar",
+      "rating": 8.6,
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "category": [
+        "Bilim Kurgu",
+        "Drama",
+        "Macera"
+      ],
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "scenario": "Jonathan Nolan, Christopher Nolan",
+      "director": "Christopher Nolan",
+      "date": "2014/11/07",
+      "actors": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ]
+    },
+    {
+      "id": "31",
+      "addedBy": "1",
+      "title": "The Departed",
+      "rating": 8.5,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg",
+      "category": [
+        "Suç",
+        "Drama",
+        "Gerilim"
+      ],
+      "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "scenario": "William Monahan",
+      "director": "Martin Scorsese",
+      "date": "2006/10/06",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Jack Nicholson"
+      ]
+    },
+    {
+      "id": "32",
+      "addedBy": "2",
+      "title": "The Godfather Part II",
+      "rating": 9,
+      "image": "https://static01.nyt.com/images/2022/03/13/arts/13godfather-pacino1/merlin_203043024_2d87c8a6-318e-4d82-afc7-0b00cea6b7af-superJumbo.jpg",
+      "category": [
+        "Suç",
+        "Drama"
+      ],
+      "description": "The early life and career of Vito Corleone in 1920s New York is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+      "scenario": "Mario Puzo, Francis Ford Coppola",
+      "director": "Francis Ford Coppola",
+      "date": "1974/12/20",
+      "actors": [
+        "Al Pacino",
+        "Robert De Niro",
+        "Diane Keaton"
+      ]
+    },
+    {
+      "id": "33",
+      "addedBy": "3",
+      "title": "Parasite",
+      "rating": 8.6,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/bbed89d7822a68e883cb964d109c5b81e9dcc60fb0248c7b724467bebba45624.jpg",
+      "category": [
+        "Drama",
+        "Gerilim",
+        "Komedi"
+      ],
+      "description": "A poor family schemes to become employed by a wealthy family by infiltrating their household and posing as unrelated, highly qualified individuals.",
+      "scenario": "Bong Joon-ho, Han Jin-won",
+      "director": "Bong Joon-ho",
+      "date": "2019/11/08",
+      "actors": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong"
+      ]
+    },
+    {
+      "id": "34",
+      "addedBy": "1",
+      "title": "Joker",
+      "rating": 8.4,
+      "image": "https://upload.wikimedia.org/wikipedia/tr/9/97/Joker_%28film%29.jpg",
+      "category": [
+        "Drama",
+        "Suç",
+        "Gerilim"
+      ],
+      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral that leads him to become the infamous Joker.",
+      "scenario": "Todd Phillips, Scott Silver",
+      "director": "Todd Phillips",
+      "date": "2019/10/04",
+      "actors": [
+        "Joaquin Phoenix",
+        "Robert De Niro",
+        "Zazie Beetz"
+      ]
+    },
+    {
+      "id": "35",
       "addedBy": "2",
       "title": "The Shawshank Redemption",
       "rating": 9.3,
@@ -64,100 +246,58 @@
       ]
     },
     {
-      "id": "13",
-      "addedBy": "d948",
-      "title": "Inglourious Basterds",
-      "rating": 8.3,
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg",
+      "id": "36",
+      "addedBy": "3",
+      "title": "Goodfellas",
+      "rating": 8.7,
+      "image": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
       "category": [
-        "Adventure",
-        "Drama",
-        "War"
+        "Suç",
+        "Drama"
       ],
-      "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theater owner's vengeful plans.",
-      "scenario": "Quentin Tarantino",
-      "director": "Quentin Tarantino",
-      "date": "2009/08/21",
+      "description": "The true story of Henry Hill, a young man who grows up in the mob and works his way up through the ranks.",
+      "scenario": "Nicholas Pileggi, Martin Scorsese",
+      "director": "Martin Scorsese",
+      "date": "1990/09/19",
       "actors": [
-        "Brad Pitt",
-        "Diane Kruger",
-        "Eli Roth"
+        "Robert De Niro",
+        "Ray Liotta",
+        "Joe Pesci"
       ]
     },
     {
-      "id": "14",
-      "addedBy": "b7e8",
-      "title": "The Prestige",
-      "rating": 8.5,
-      "image": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+      "id": "37",
+      "addedBy": "1",
+      "title": "The Dark Knight",
+      "rating": 9,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
       "category": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi"
+        "Aksiyon",
+        "Suç",
+        "Gerilim"
       ],
-      "description": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
-      "scenario": "Jonathan Nolan",
+      "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "scenario": "Jonathan Nolan, Christopher Nolan",
       "director": "Christopher Nolan",
-      "date": "2006/10/20",
+      "date": "2008/07/18",
       "actors": [
         "Christian Bale",
-        "Hugh Jackman",
-        "Scarlett Johansson"
+        "Heath Ledger",
+        "Aaron Eckhart"
       ]
     },
     {
-      "id": "15",
-      "title": "Braveheart2",
-      "category": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "date": "1995/05/24",
-      "description": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
-      "director": "Mel Gibson",
-      "actors": [
-        "Mel Gibson",
-        "Sophie Marceau",
-        "Patrick McGoohan"
-      ],
-      "rating": 8.3,
-      "scenario": "Randall Wallace",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg"
-    },
-    {
-      "id": "16",
-      "addedBy": "aad0",
-      "title": "Mad Max: Fury Road",
-      "rating": 8.1,
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
-      "category": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
-      "scenario": "George Miller",
-      "director": "George Miller",
-      "date": "2015/05/15",
-      "actors": [
-        "Tom Hardy",
-        "Charlize Theron",
-        "Nicholas Hoult"
-      ]
-    },
-    {
-      "id": "17",
-      "addedBy": "2f7a",
+      "id": "38",
+      "addedBy": "2",
       "title": "The Godfather",
       "rating": 9.2,
-      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
       "category": [
-        "Crime",
+        "Suç",
         "Drama"
       ],
       "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      "scenario": "Mario Puzo",
+      "scenario": "Mario Puzo, Francis Ford Coppola",
       "director": "Francis Ford Coppola",
       "date": "1972/03/24",
       "actors": [
@@ -167,129 +307,46 @@
       ]
     },
     {
-      "id": "18",
-      "addedBy": "1",
-      "title": "The Dark Knight Rises Two",
-      "category": [
-        "Action",
-        "Thriller",
-        "Drama",
-        "Horror"
-      ],
-      "date": "2012/07/20",
-      "description": "Eight years after the Joker's reign of anarchy, Batman is forced from his exile with the help of the enigmatic Selina Kyle to save Gotham City from the brutal guerrilla terrorist Bane.",
-      "director": "Christopher Nolan",
-      "actors": [
-        "Christian Bale",
-        "Tom Hardy",
-        "Anne Hathaway",
-        "Coni GillingHall"
-      ],
-      "rating": "7",
-      "scenario": "Jonathan Nolan",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg"
-    },
-    {
-      "id": "21",
-      "addedBy": "b7e8",
-      "title": "Saving Private Ryan",
-      "rating": 8.6,
-      "image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
-      "category": [
-        "Drama",
-        "War"
-      ],
-      "description": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
-      "scenario": "Robert Rodat",
-      "director": "Steven Spielberg",
-      "date": "1998/07/24",
-      "actors": [
-        "Tom Hanks",
-        "Matt Damon",
-        "Tom Sizemore"
-      ]
-    },
-    {
-      "id": "22",
-      "addedBy": "ceca",
-      "title": "The Departed2",
-      "category": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "date": "2006/10/06",
-      "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-      "director": "Martin Scorsese",
-      "actors": [
-        "Leonardo DiCaprio",
-        "Matt Damon",
-        "Jack Nicholson"
-      ],
-      "rating": "8.5",
-      "scenario": "William Monahan",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg"
-    },
-    {
-      "id": "23",
-      "addedBy": "aad0",
-      "title": "Whiplash",
+      "id": "39",
+      "addedBy": "3",
+      "title": "Gladiator",
       "rating": 8.5,
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png",
       "category": [
-        "Drama",
-        "Music"
-      ],
-      "description": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
-      "scenario": "Damien Chazelle",
-      "director": "Damien Chazelle",
-      "date": "2014/10/10",
-      "actors": [
-        "Miles Teller",
-        "J.K. Simmons",
-        "Melissa Benoist"
-      ]
-    },
-    {
-      "id": "24",
-      "addedBy": "2f7a",
-      "title": "Fight Club",
-      "rating": 8.8,
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
-      "category": [
+        "Aksiyon",
+        "Macera",
         "Drama"
       ],
-      "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
-      "scenario": "Jim Uhls",
-      "director": "David Fincher",
-      "date": "1999/10/15",
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "scenario": "David Franzoni, John Logan, William Nicholson",
+      "director": "Ridley Scott",
+      "date": "2000/05/05",
       "actors": [
-        "Brad Pitt",
-        "Edward Norton",
-        "Meat Loaf"
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen"
       ]
     },
     {
-      "id": "15b4",
+      "id": "40",
       "addedBy": "1",
-      "title": "denemee",
+      "title": "Braveheart",
+      "rating": 8.3,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/8356a4450d631b1baddbfd4a680432189f4bb4dc90c8c9033ceed5bac39d64df.jpg",
       "category": [
-        "Horror",
-        "Action",
-        "Comedy",
-        "Romance"
+        "Aksiyon",
+        "Macera",
+        "Tarihi"
       ],
-      "date": "2024-08-22",
-      "description": "adgadgsdgsdg",
-      "director": "Ezel Akay",
+      "description": "When his beloved wife is murdered by the tyrannical English, William Wallace begins a revolt against King Edward I of England.",
+      "scenario": "Randall Wallace",
+      "director": "Mel Gibson",
+      "date": "1995/05/24",
       "actors": [
-        "Şener Şen",
-        " Cem Yılmaz",
-        " Okan Yalabık"
-      ],
-      "rating": "4",
-      "scenario": "Nuri Bilge Ceylan",
-      "image": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/69/8318_2.jpg/640px-8318_2.jpg"
+        "Mel Gibson",
+        "Sophie Marceau",
+        "Patrick McGoohan"
+      ]
     }
   ]
 }

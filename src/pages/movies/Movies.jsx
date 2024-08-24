@@ -4,12 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllMovies } from "../../redux/slices/movieSlice/movieSlice";
 import { useNavigate } from "react-router-dom";
 import Spinner from "../../components/General/Spinner/Spinner";
-import { Pagination } from "react-bootstrap";
+import { Pagination, Row, Col, Form, Button } from "react-bootstrap";
 
 const Movies = () => {
-  const { movies, isLoading, isError, isSuccess } = useSelector(
-    (state) => state.movie
-  );
+  const { movies, isLoading, isSuccess } = useSelector((state) => state.movie);
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -59,11 +57,11 @@ const Movies = () => {
 
   const finalMovies = sortMovies(filteredMovies);
 
-  const indexOfLastItem = currentPage * itemsPerPage; // son filmin indexi = şuanki sayfa * her sayfadaki eleman sayısı => 20= 2*10
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage; // sayfadakı ilk filmin indexi = son filmin indexi - her sayfadaki eleman sayısı => 10 = 20-10
-  const currentItems = finalMovies.slice(indexOfFirstItem, indexOfLastItem); // şuanki sayfadaki filmler = finalMovies.slice(10,20) => mevcut sayfadaki ilk itemden son iteme kadar olan filmleri alır
-  const totalPages = Math.ceil(finalMovies.length / itemsPerPage); // toplam sayfa sayısı = finalMovies.length / her sayfadaki eleman sayısı => 2 = 20/10
-  const paginate = (pageNumber) => setCurrentPage(pageNumber); // sayfa numarasını değiştirir
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = finalMovies.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(finalMovies.length / itemsPerPage);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
     if (!user) {
@@ -83,23 +81,23 @@ const Movies = () => {
   }
 
   return (
-    <div className="moviesGrid d-flex flex-column p-5 border m-5">
-      <h1>All Movies</h1>
-      <div className="moviesListTop d-flex w-100 gap-5 mb-5">
-        <div className="searchMovie w-50">
-          <input
+    <div className="moviesGrid  p-5 border m-5">
+      <h1>Tüm Filmler</h1>
+      <Row className="moviesListTop w-100 gap-3 mb-5">
+        <Col xs={12} >
+          <Form.Control
             type="text"
-            className="form-control p-3"
-            placeholder="Search Movie"
+            placeholder="Film Ara..."
             onChange={handleSearch}
             value={search}
+            className="p-3"
           />
-        </div>
-        <div className="sortMovies w-50">
-          <select
-            className="form-select p-3"
+        </Col>
+        <Col xs={12} sm={12} >
+          <Form.Select
             aria-label="Default select example"
             onChange={handleCategoryChange}
+            className="p-3"
           >
             <option value="alfabetik">Alfabetik Diziliş</option>
             <option value="rate">Puan'a Göre Sırala</option>
@@ -108,25 +106,26 @@ const Movies = () => {
                 {category}
               </option>
             ))}
-          </select>
-        </div>
-        <button className="btn btn-outline-dark btn-lg" onClick={refreshMovies}>
-          Yenile
-        </button>
-      </div>
+          </Form.Select>
+        </Col>
+        <Col xs={12} sm={12}>
+          <Button className="w-100" variant="outline-dark" size="lg" onClick={refreshMovies}>
+            Yenile
+          </Button>
+        </Col>
+      </Row>
       <div className="d-flex flex-column justify-content-center align-items-center">
         {currentItems.map((movie) => (
           <MovieItem key={movie.id} movie={movie} />
         ))}
       </div>
       <div className="pagination d-flex justify-content-center gap-3">
-        <Pagination size="lg" >
+        <Pagination size="lg">
           {Array.from({ length: totalPages }, (_, index) => (
             <Pagination.Item
               key={index}
               active={index + 1 === currentPage}
               onClick={() => paginate(index + 1)}
-             
             >
               {index + 1}
             </Pagination.Item>

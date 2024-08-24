@@ -29,34 +29,34 @@ const RowMovieItem = ({ movie }) => {
   const handleUpdateShow = () => setShowUpdate(true);
 
   // Hover effect
-
-  const onHoverCard = (e) => {
+  const onHoverCard = () => {
     setOnHover(true);
   };
-  const onLeaveCard = (e) => {
+  const onLeaveCard = () => {
     setOnHover(false);
   };
 
   return (
     <>
       <Card
+        className={`d-flex w-100 justify-content-center card shadow-md ${
+          onHover ? "border-3 shadow-xl" : ""
+        }`}
         onMouseEnter={onHoverCard}
         onMouseLeave={onLeaveCard}
-        className={`${onHover ? "border-3 shadow-xl" : ""}`}
       >
-        <Row className="p-3">
+        <Row className="g-2 p-3">
           <Col
             sm={12}
             md={10}
             lg={8}
             xl={4}
-            className="d-flex justify-content-start align-items-center "
+            className="d-flex justify-content-center align-items-center"
           >
             <Card.Img
-              className="movie-image border border-warning "
+              className="movie-image border border-warning"
               alt={`${title} filminin afiş görseline şuanda ulaşılamamaktadır.`}
               variant="top"
-              style={{ maxWidth: "50%", maxHeight: "500%" }}
               src={image}
             />
           </Col>
@@ -66,13 +66,14 @@ const RowMovieItem = ({ movie }) => {
             </Card.Title>
             <hr />
 
-            <Card.Body className="d-flex flex-column  align-items-center ">
-              <Card.Title className="d-flex  align-items-center gap-3 ">
+            <Card.Body className="d-flex flex-column align-items-center">
+              <Card.Title className="d-flex flex-wrap align-items-center gap-2">
                 {category.map((cat) => (
                   <Badge
                     key={cat}
                     bg="dark"
-                    className="badge text-light   fs-5"
+                    className="badge text-light fs-6"
+                    style={{ whiteSpace: "nowrap" }}
                   >
                     {cat}
                   </Badge>
@@ -82,14 +83,29 @@ const RowMovieItem = ({ movie }) => {
               <Card.Text className="fs-5">
                 Filmi Ekleyen Kişi : {username}{" "}
               </Card.Text>
-              <div className="controllMovie d-flex w-100 justify-content-end gap-3 ">
-                <button className="btn btn-warning" onClick={handleUpdateShow}>
-                  Düzenle
-                </button>
-                <button className="btn btn-danger" onClick={handleShow}>
-                  Sil
-                </button>
-              </div>
+
+              <ul className="list-group w-100">
+                <li className="list-group-item">Senarist : {scenario}</li>
+                <li className="list-group-item">
+                  Oyuncular : {actors.join(", ")}
+                </li>
+              </ul>
+              <Row className="my-3 gap-3">
+                <Col >
+                  <button
+                    className="btn btn-warning w-100 my*2"
+                    onClick={handleUpdateShow}
+                  >
+                    Düzenle
+                  </button>
+                </Col>
+
+                <Col>
+                  <button className="btn btn-danger w-100" onClick={handleShow}>
+                    Sil
+                  </button>
+                </Col>
+              </Row>
             </Card.Body>
           </Col>
         </Row>

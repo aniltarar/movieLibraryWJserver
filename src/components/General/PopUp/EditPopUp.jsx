@@ -40,25 +40,25 @@ const EditPopUp = ({ show, handleClose, movie }) => {
   };
 
   const checkableCategories = [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Crime",
+    "Aksiyon",
+    "Macera",
+    "Komedi",
+    "Suç",
     "Drama",
-    "Fantasy",
-    "Historical",
-    "Horror",
-    "Mystery",
-    "Philosophical",
-    "Political",
-    "Romance",
-    "Saga",
-    "Satire",
-    "Science Fiction",
-    "Thriller",
-    "Urban",
-    "Western",
-  ];
+    "Fantastik",
+    "Tarihi",
+    "Korku",
+    "Gizem",
+    "Felsefi",
+    "Politik",
+    "Romantik",
+    "Efsane",
+    "Sati",
+    "Bilim Kurgu",
+    "Gerilim",
+    "Kentsel",
+    "Vahşi Batı",
+];
 
   const handleChange = (e) => {
     setUpdatedMovie({
@@ -190,7 +190,7 @@ const EditPopUp = ({ show, handleClose, movie }) => {
                 </div>
               </Form.Group>
               <Form.Group className="mb-3" controlId="rating">
-                <Form.Label>IMDB Puanı</Form.Label>
+                <Form.Label>Puanı</Form.Label>
                 <Form.Range
                   max={10}
                   min={0}
