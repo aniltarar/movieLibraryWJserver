@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e1154100-2dd2-4aef-82f7-d017f9c6677c)# My Movie Library with JSON Server - CRUD APP
+# My Movie Library with JSON Server - CRUD APP
 
 Bu React uygulaması kişilerin profil oluşturması ve oluşturdukları profil üzerinde izledikleri filmler üzerinden işlemler yapılması için tasarlanmıştır. Temel olarak CRUD işlemlerini sağlayan bir projedir. Redux Toolkit ile state yönetimi sağlanmıştır.
 
